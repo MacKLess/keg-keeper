@@ -3,7 +3,7 @@ import { Beer } from './beer.model';
 
 @Component({
   selector: 'new-beer',
-  templateUrl: './new-beer.component.html'
+  templateUrl: 'app/new-beer.component.html'
 })
 
 export class NewBeerComponent {
@@ -11,5 +11,6 @@ export class NewBeerComponent {
 
   submitForm(name: string, brand: string, price: number, abv: number) {
     var newBeerToAdd: Beer = new Beer(name, brand, price, abv);
+    this.newBeerSender.emit(newBeerToAdd);
   }
 }

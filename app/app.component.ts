@@ -40,9 +40,9 @@ export class AppComponent {
   //   this.selectedBeer = clickedBeer;
   // }
 
-  // finishEditing() {
-  //   this.selectedBeer = null;
-  // }
+  finishedReviewing() {
+    this.selectedBeer = null;
+  }
 
   addBeer(newBeerFromChild: Beer) {
     this.masterBeerList.push(newBeerFromChild);
