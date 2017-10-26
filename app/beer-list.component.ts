@@ -5,7 +5,7 @@ import { Beer } from './beer.model';
   selector: 'beer-list',
   template: `
   <ul>
-    <li *ngFor="let currentBeer of beers">
+    <li *ngFor="let currentBeer of childBeerList">
     <h4>{{currentBeer.name}}</h4>
     </li>
   </ul>
