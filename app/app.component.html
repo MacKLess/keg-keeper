@@ -1,3 +1,7 @@
 <div class="container">
   <h1>Welcome to Keg Keeper</h1>
+  <h2>Today is {{month}}/{{day}}/{{year}}</h2>
+  <h3>{{currentFocus}}</h3>
+  <beer-list [childBeerList]="masterBeerList"></beer-list>
+  <new-beer (newBeerSender)="addBeer($event)"></new-beer>
 </div>

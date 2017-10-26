@@ -1,0 +1,30 @@
+<div class="newBeer">
+  <h1>Add A Keg</h1>
+  <div>
+    <label>Enter Beer Keg Name:</label>
+    <input #newName>
+  </div>
+  <div>
+    <label>Enter Brandname:</label>
+    <input #newBrand>
+  </div>
+  <div>
+    <label>Enter Price/Pint: </label>
+    <select #newPrice>
+      <option [value]="5">$5.00</option>
+      <option [value]="6">$6.00</option>
+      <option [value]="7">$7.00</option>
+      <option [value]="8">$8.00</option>
+      <option [value]="9">$9.00</option>
+    </select>
+  </div>
+  <div>
+    <label>Enter Alcohol Content (ABV):</label>
+    <input #newAbv>
+  </div>
+  <button (click)="submitForm(newName.value, newBrand.value, newPrice.value, newAbv.value);
+  newName.value='';
+  newBrand.value='';
+  newPrice.value='';
+  newAbv.value='';">Add</button>
+</div>

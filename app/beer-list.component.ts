@@ -1,9 +1,8 @@
-import { Component } from '@angular/core';
-
-// if make beer page --> import { Beer } from './beer';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Beer } from './beer.model';
 
 @Component({
-  selector: 'beer-detail',
+  selector: 'beer-list',
   template: `
     <div *ngIf="beer">
       <h2>{{beer.name}} details!</h2>
