@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  
+
+}
+
+
+
+export class Beer {
+  name: string;
+  brand: string;
+  price: number;
+  alcoholContent: number;
+
 }
